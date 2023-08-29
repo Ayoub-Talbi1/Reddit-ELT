@@ -23,11 +23,11 @@ The pipeline consists of several key components:
    - The `dbt` folders, added to the repo after connecting it to dbt Cloud, contains transformation logic, I only added a model (text_posts.sql) and schema.yml under the models folder, and did the transformations I want (here I did a simple transformation of choosing only the columns I want), the schema.yml did some basic tests and documentation for our table. I haven't added much, as it's mostly for demonstration purposes. You can see that I've added a not_null test for id. For the rest, I've only added in the name of the column and a description, I didnt work with the other folders.
    - Under dbt_project.yml all I've really changed here is the project name to reddit_project and told dbt to create all models as tables (rather than views). 
    - dbt is used to connect to the data warehouse (Redshift) and apply transformations to the data.
-   - ![Capture d’écran 2023-08-17 145512](https://github.com/Ayoub-Talbi1/Reddit-ELT/assets/86127094/f82b5c73-77c7-410a-bb42-71525d4f75ef)
+   - ![Capture d’écran 2023-08-17 145512](https://github.com/Ayoub-Talbi1/Reddit-ELT/assets/86127094/413b69c2-5e6a-4410-a2fd-3c64551686d9)
 
 3. **Data Visualization (Power BI)**:
    - Power BI is connected to the data warehouse to create visualizations and gain insights from the transformed data.
-   - ![Capture d’écran 2023-08-29 174628](https://github.com/Ayoub-Talbi1/Reddit-ELT/assets/86127094/4acfb495-a115-4fd7-aa62-56a35c018be7)
+   - ![Capture d’écran 2023-08-29 174628](https://github.com/Ayoub-Talbi1/Reddit-ELT/assets/86127094/27567aba-acda-4f2f-ba4e-546bf1943987)
 
 4. **Infrastructure as Code (Terraform)**:
    - The infrastructure for the pipeline is defined using Terraform, with the configuration stored in the `terraform` directory.
