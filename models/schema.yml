@@ -1,0 +1,26 @@
+models:
+  - name: reddit_transformed
+    description: Transformed Reddit Data
+    columns:
+      - name: id
+        description: Reddit ID of Post
+        tests:
+          - not_null
+      - name: title
+        description: Title of Reddit Post
+      - name: author
+        description: author of Reddit Post
+      - name: score
+        description: Score of Reddit Post
+      - name: upvote_ratio
+        description: upvote_ratio for Post
+      - name: num_comments
+        description: Number of Comments for Post
+      - name: posting_time
+        description: Posting time
+      - name: permalink
+        description: Permalink of Reddit Post
+      - name: url
+        description: Full URL of Reddit Post
+      - name: subreddit_id
+        description: Subreddit id
