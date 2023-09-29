@@ -5,7 +5,9 @@ Welcome to the **Reddit ELT Pipeline** repository! This project aims to provide 
 ## Overview
 
 The Reddit ELT Pipeline involves extracting Reddit data from its API, processing it, and ultimately creating visualizations using Power BI. The pipeline is orchestrated using Apache Airflow and Docker. The data is extracted using the PRAW API wrapper in Python, transformed using dbt, and then loaded into AWS Redshift for analysis.
-<img width="592" alt="workflow" src="https://github.com/Ayoub-Talbi1/Reddit-ELT/assets/86127094/459bd2c4-284f-4280-9ef7-74cd5359a9b4">
+
+![workflow](https://github.com/Ayoub-Talbi1/Reddit-ELT/assets/86127094/660c22c9-4459-4d76-923f-0177437b3023)
+
 
 
 ## How the Pipeline Works
